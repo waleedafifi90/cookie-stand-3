@@ -1,0 +1,51 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body{
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  font-family: URW Chancery L, cursive;
+  background: linear-gradient(to right top,  rgba(37, 126, 126, .7),  aquamarine, rgb(37, 126, 126, .7));
+}
+
+
+
+img{
+  border-radius: 50%;
+
+}
+
+
+h1{
+  font-weight: bolder;
+  text-transform:uppercase;
+  font-style: oblique;
+  font-size: 400%;    
+}
+
+h2{
+  font-weight: bolder;
+  text-transform:uppercase;
+  font-style:italic;
+  font-size: 200%;
+  padding: 2%;
+}
+
+p{
+  line-height: 2;
+  border-radius: 2rem;
+  border: solid 5px rgba(114, 226, 189, .7);
+  background-color:  rgba(45, 151, 151, 0.3) ;
+  font-size: 100%;
+}
+
+
+
+li:hover{
+  background-color: rgba(71, 253, 193, 0.3);
+  border: dotted 5px rgba(82, 167, 138, 0.7);;
+  font-weight: bolder;
+}
