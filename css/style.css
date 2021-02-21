@@ -11,14 +11,6 @@ body{
   background: linear-gradient(to right top,  rgba(37, 126, 126, .7),  aquamarine, rgb(37, 126, 126, .7));
 }
 
-
-
-img{
-  border-radius: 50%;
-
-}
-
-
 h1{
   font-weight: bolder;
   text-transform:uppercase;
