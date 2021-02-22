@@ -13,9 +13,9 @@ const seattle = {
 
   getNumberOfCookiesPerHour: function( ){
     for ( let i = 0; i < workingHours.length; i++ ){
-      this.NumberOfCustomersPerHour = ( Math.floor( Math.random() * ( this.maxCustomers - this.minCustomers ) + this.minCustomers ) );
+      this.NumberOfCustomersPerHour = Math.floor( Math.random() * ( this.maxCustomers - this.minCustomers ) + this.minCustomers );
 
-      this.NumberOfCookiesPerHour.push( Math.floor( ( Math.floor( Math.random() * ( this.maxCustomers - this.minCustomers ) + this.minCustomers ) ) * this.avgCookieSale ) );
+      this.NumberOfCookiesPerHour.push( Math.ceil( this.NumberOfCustomersPerHour * this.avgCookieSale ) );
       this.totalNumberOfCookies += Number( this.NumberOfCookiesPerHour[i] );
     }
   },
@@ -58,9 +58,9 @@ const tokyo = {
 
   getNumberOfCookiesPerHour: function( ){
     for ( let i = 0; i < workingHours.length; i++ ){
-      this.NumberOfCustomersPerHour = ( Math.floor( Math.random() * ( this.maxCustomers - this.minCustomers ) + this.minCustomers ) );
+      this.NumberOfCustomersPerHour = Math.floor( Math.random() * ( this.maxCustomers - this.minCustomers ) + this.minCustomers );
 
-      this.NumberOfCookiesPerHour.push( Math.floor( ( Math.floor( Math.random() * ( this.maxCustomers - this.minCustomers ) + this.minCustomers ) ) * this.avgCookieSale ) );
+      this.NumberOfCookiesPerHour.push( Math.ceil( this.NumberOfCustomersPerHour * this.avgCookieSale ) );
       this.totalNumberOfCookies += Number( this.NumberOfCookiesPerHour[i] );
     }
   },
@@ -103,9 +103,9 @@ const dubai = {
 
   getNumberOfCookiesPerHour: function( ){
     for ( let i = 0; i < workingHours.length; i++ ){
-      this.NumberOfCustomersPerHour = ( Math.floor( Math.random() * ( this.maxCustomers - this.minCustomers ) + this.minCustomers ) );
+      this.NumberOfCustomersPerHour = Math.floor( Math.random() * ( this.maxCustomers - this.minCustomers ) + this.minCustomers );
 
-      this.NumberOfCookiesPerHour.push( Math.floor( ( Math.floor( Math.random() * ( this.maxCustomers - this.minCustomers ) + this.minCustomers ) ) * this.avgCookieSale ) );
+      this.NumberOfCookiesPerHour.push( Math.ceil( this.NumberOfCustomersPerHour * this.avgCookieSale ) );
       this.totalNumberOfCookies += Number( this.NumberOfCookiesPerHour[i] );
     }
   },
@@ -148,9 +148,9 @@ const paris = {
 
   getNumberOfCookiesPerHour: function( ){
     for ( let i = 0; i < workingHours.length; i++ ){
-      this.NumberOfCustomersPerHour = ( Math.floor( Math.random() * ( this.maxCustomers - this.minCustomers ) + this.minCustomers ) );
+      this.NumberOfCustomersPerHour = Math.floor( Math.random() * ( this.maxCustomers - this.minCustomers ) + this.minCustomers );
 
-      this.NumberOfCookiesPerHour.push( Math.floor( ( Math.floor( Math.random() * ( this.maxCustomers - this.minCustomers ) + this.minCustomers ) ) * this.avgCookieSale ) );
+      this.NumberOfCookiesPerHour.push( Math.ceil( this.NumberOfCustomersPerHour * this.avgCookieSale ) );
       this.totalNumberOfCookies += Number( this.NumberOfCookiesPerHour[i] );
     }
   },
@@ -193,9 +193,9 @@ const lima = {
 
   getNumberOfCookiesPerHour: function( ){
     for ( let i = 0; i < workingHours.length; i++ ){
-      this.NumberOfCustomersPerHour = ( Math.floor( Math.random() * ( this.maxCustomers - this.minCustomers ) + this.minCustomers ) );
+      this.NumberOfCustomersPerHour = Math.floor( Math.random() * ( this.maxCustomers - this.minCustomers ) + this.minCustomers );
 
-      this.NumberOfCookiesPerHour.push( Math.floor( ( Math.floor( Math.random() * ( this.maxCustomers - this.minCustomers ) + this.minCustomers ) ) * this.avgCookieSale ) );
+      this.NumberOfCookiesPerHour.push( Math.ceil( this.NumberOfCustomersPerHour * this.avgCookieSale ) );
       this.totalNumberOfCookies += Number( this.NumberOfCookiesPerHour[i] );
     }
   },
