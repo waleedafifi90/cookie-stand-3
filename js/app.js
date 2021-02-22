@@ -7,12 +7,17 @@ const seattle = {
   minCustomers: 23,
   maxCustomers: 65,
   avgCookieSale: 6.3,
-  NumberOfCookiesPerHour:['','','','','','','','','','','','','',''],
+  NumberOfCookiesPerHour:[],
+  NumberOfCustomersPerHour: [],
   totalNumberOfCookies: 0,
 
   getNumberOfCookiesPerHour: function( ){
     for ( let i = 0; i < workingHours.length; i++ ){
-      this.NumberOfCookiesPerHour[i] = Math.floor( ( Math.floor( Math.random() * ( this.maxCustomers - this.minCustomers ) + this.minCustomers ) ) * this.avgCookieSale );
+
+      this.NumberOfCustomersPerHour = ( Math.floor( Math.random() * ( this.maxCustomers - this.minCustomers ) + this.minCustomers ) );
+      console.log( this.NumberOfCustomersPerHour );
+
+      this.NumberOfCookiesPerHour.push( Math.floor( ( Math.floor( Math.random() * ( this.maxCustomers - this.minCustomers ) + this.minCustomers ) ) * this.avgCookieSale ) );
       this.totalNumberOfCookies += Number( this.NumberOfCookiesPerHour[i] );
     }
   },
