@@ -1,11 +1,9 @@
 'use strict';
-// let workingHours = ['6:00 am','7:00 am','8:00 am','9:00 am','10:00 am','11:00 am','12:00 pm','1:00 pm','2:00 pm','3:00 pm','4:00 pm','5:00 pm','6:00 pm','7:00 pm'];
+let workingHours = ['6:00am','7:00am','8:00am','9:00am','10:00am','11:00am','12:00pm','1:00pm','2:00pm','3:00pm','4:00pm','5:00pm','6:00pm','7:00pm'];
 let dailyLocationTotal = [];
 let totals = 0;
-let workingHours = ['6:00am','7:00am','8:00am','9:00am','10:00am','11:00am','12:00pm','1:00pm','2:00pm','3:00pm','4:00pm','5:00pm','6:00pm','7:00pm'];
 
 const ParentElement = document.getElementById( 'shops' );//creat the table
-
 const tableElement = document.createElement( 'table' );
 ParentElement.appendChild( tableElement );
 
@@ -39,16 +37,13 @@ Shop.prototype.getNumberOfCookiesPerHour = function( ){
     this.totalNumberOfCookies += Number( this.NumberOfCookiesPerHour[i] );
   }
   dailyLocationTotal.push( this.totalNumberOfCookies );
-  // console.log(this.NumberOfCookiesPerHour);
-
-  // console.log(this.totalNumberOfCookies);
 };
 
 
-//print table body
 Shop.prototype.render = function(){
   this.getNumberOfCookiesPerHour();
 
+  //print table body
   const tbodyElement = document.createElement( 'tbody' );
   tableElement.appendChild( tbodyElement );
 
@@ -70,27 +65,8 @@ Shop.prototype.render = function(){
 };
 
 
-//creating shops objects//
-const seattle = new Shop( 'seattle', 23, 65, 6.3 );
-const tokyo = new Shop( 'tokyo', 3, 24, 1.2 );
-const dubai = new Shop( 'dubai', 11, 38, 3.7 );
-const paris = new Shop( 'paris', 23, 38, 2.3 );
-const lima = new Shop( 'lima', 2, 16, 4.6 );
 
-printTableHeader();
-
-seattle.render();
-tokyo.render();
-dubai.render();
-paris.render();
-lima.render();
-
-printTableFooter( );
-
-// lima.printTableFooter();
-
-
-// // // Function to print table header
+// Function to print table header
 
 function printTableHeader ( ){
 
@@ -138,4 +114,21 @@ function printTableFooter( ){
   th3Element.textContent = totals;
 }
 
-//end
+
+// main programe execution start here
+//creating shops objects//
+const seattle = new Shop( 'seattle', 23, 65, 6.3 );
+const tokyo = new Shop( 'tokyo', 3, 24, 1.2 );
+const dubai = new Shop( 'dubai', 11, 38, 3.7 );
+const paris = new Shop( 'paris', 23, 38, 2.3 );
+const lima = new Shop( 'lima', 2, 16, 4.6 );
+
+printTableHeader();
+
+seattle.render();
+tokyo.render();
+dubai.render();
+paris.render();
+lima.render();
+
+printTableFooter( );
