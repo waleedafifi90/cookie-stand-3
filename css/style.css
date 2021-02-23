@@ -7,9 +7,13 @@ header, footer{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 20px 0;
 
 }
 
+header img{
+  width: 25%;
+}
 body{
   width: 80%;
   margin: auto;
@@ -25,9 +29,16 @@ table{
   text-align: center;
   border-radius: 20%;
   empty-cells: hide;
+  padding: 20px 0;
+
 }
 
-
+main div img {
+  float: left;
+  width: calc(100% / 3);
+  border-radius: 15px;
+  margin: 5px;
+}
 
 td, th{
   border-radius: 20%;
@@ -50,8 +61,23 @@ th {
   font-size: 400%;    
 } 
 
+h3{
+  font-weight: bolder;
+  text-transform:capitalize;
+  font-size: 150%;    
+}
+
+main div ul{
+  padding: 10px 0;
+  margin: auto;
+}
 
 tr:hover{
   background-color: rgba(33, 219, 243, 0.5);
   font-weight: bolder;
+}
+
+main div:nth-child(2){
+  clear: both;
+  padding: 20px 0;
 }
