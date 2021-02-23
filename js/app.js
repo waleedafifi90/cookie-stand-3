@@ -64,10 +64,7 @@ Shop.prototype.render = function(){
   td2Element.textContent = this.totalNumberOfCookies;
 };
 
-
-
 // Function to print table header
-
 function printTableHeader ( ){
 
   const theadElement = document.createElement( 'thead' );
@@ -77,7 +74,7 @@ function printTableHeader ( ){
   theadElement.appendChild( tr1Element );
   const thElement = document.createElement( 'th' );
   tr1Element.appendChild( thElement );
-  thElement.textContent = '    ';//
+  thElement.textContent = 'Location';//
 
   for( let i = 0; i < workingHours.length; i++ ){
     const thElement = document.createElement( 'th' );
