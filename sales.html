@@ -7,11 +7,35 @@
 </head>
 <body>
   <header>
+    <img src="img/salmon.png" alt="logo">
     <h1>Sales data</h1>
     <a href="index.html">Pat’s Salmon Cookies: Home</a>
   </header>
   <hr>
   <main>
+
+    <form id="addNewShop">
+      <fieldset>
+        <legend>Add new shop:</legend>
+
+        <label for="shopLocation">Location</label>
+        <input type="text" name="shopLocation" id="shopLocation">
+
+        <label for="shopMinCustomers">Min.Customers</label>
+        <input type="number" name="shopMinCustomers" id="shopMinCustomers">
+
+        <label for="shopMaxCustomers">Max.Customers</label>
+        <input type="number" name="shopMaxCustomers" id="shopMaxCustomers">
+
+        <label for="shopAvgCookieSale">avg. Cookie Sale</label>
+        <input type="number" name="shopAvgCookieSale" id="shopAvgCookieSale">
+
+        <button type="submit">ADD SHOP</button>
+
+      </fieldset>
+    </form>
+
+
 
     <div id = "shops">
 

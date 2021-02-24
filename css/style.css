@@ -81,3 +81,8 @@ main div:nth-child(2){
   clear: both;
   padding: 20px 0;
 }
+
+fieldset{
+  border: dotted  rgb(37, 126, 126);
+  display: inline-block;
+}
